@@ -6,6 +6,7 @@ function LoadMe(link)
     loadstring(game:HttpGet(link))()
 end
 Gamer:Button("Maxi Is Best (-:");
+Gamer:Button("If u used 1 move a bit on side for no stacking");
 
 
 Gamer:Button("Build a Boat Easter Event", function()
