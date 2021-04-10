@@ -42,5 +42,27 @@ end)
 Gamer:Button("Antarctic Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JusticeValley/Antarctic-Hub/main/New.lua", true))()
 end)
+Gamer:Button("CATIX HUB", function()
+-- anti ban for  
+-- Tapping Craze,
+-- Tapping Mania,
+-- Mining Legends, 
+-- Saber Legends. 
+    local sowd = getrawmetatable(game)
+    local sucks = sowd.__namecall
+    local player = game.Players.LocalPlayer
+    setreadonly(sowd, false)
+    sowd.__namecall = newcclosure(function(name, ...)
+        local tabs = {
+            ...
+        }
+        if getnamecallmethod() == "FireServer"  and tostring(name) == "UDPSocket" then
+            return
+        end
+        return sucks(name, unpack(tabs)) 
+    end) 
+-- script/lodastring
+loadstring(game:HttpGet("https://raw.githubusercontent.com/quentin452/CATIX-HUB/master/!Catix%20Hub", true))()
+end)
 
 library:Ready();
