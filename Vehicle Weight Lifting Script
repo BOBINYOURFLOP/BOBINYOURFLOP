@@ -11,6 +11,10 @@ Gamer:Button("GoldFarm Button Or it Can Stop", function()
 end)
 Gamer:Button("I try fix Soon!", function()
 end)
+Gamer:Button("Do not have equipped Vehicel", function()
+end)
+Gamer:Button("or auto lift no work", function()
+end)
 Gamer:Button("AUTO MOVE (ANTIAFK)", function()
 while wait(20) do
 local char = game.Players.LocalPlayer.Character
