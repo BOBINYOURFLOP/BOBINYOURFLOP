@@ -1,0 +1,22 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/Vsm3NtME"))();
+
+local Gamer = library:CreateSection("Maxi's Scripts");
+Gamer:Button("Script By Maxi (:");
+function LoadMe(link)
+    loadstring(game:HttpGet(link))()
+end
+Gamer:Button("Maxi Is Best (-:");
+
+Gamer:Button("If u used 1 move a bit on side for no stackinging", function()
+end)
+Gamer:Button("Build a Boat Easter Event", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Build%20a%20boat%20easter%20event"))();
+end)
+Gamer:Button("Script Hub's", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/ScriptHubRoblox.md"))();
+end)
+Gamer:Button("Vehicle Weight Lifting Script (;", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Vehicle%20Weight%20Lifting%20Script"))();
+end)
+
+library:Ready();
