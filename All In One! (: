@@ -15,7 +15,7 @@ end)
 Gamer:Button("Script Hub's", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/ScriptHubRoblox.md"))();
 end)
-Gamer:Button("Vehicle Weight Lifting Script", function()
+Gamer:Button("Vehicle Weight Lifting Script (;", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Vehicle%20Weight%20Lifting%20Script"))();
 end)
 
