@@ -1,0 +1,122 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/Vsm3NtME"))();
+
+local Gamer = library:CreateSection("Vehicle Weight Lifting Script");
+Gamer:Button("Script By Maxi (:");
+function LoadMe(link)
+    loadstring(game:HttpGet(link))()
+end
+Gamer:Button("ENABEL ALL ANTIAFK SCRIPTS", function()
+end
+
+Gamer:Button("AUTO MOVE (ANTIAFK)", function()
+while wait(20) do
+local char = game.Players.LocalPlayer.Character
+
+local cPos = char.HumanoidRootPart.Position
+local fPos = cPos.Z + 100
+char.Humanoid:MoveTo(Vector3.new(cPos.X,cPos.Y,fPos))
+wait(20)
+local cPos = char.HumanoidRootPart.Position
+local fPos = cPos.Z - 100
+char.Humanoid:MoveTo(Vector3.new(cPos.X,cPos.Y,fPos))
+end
+end)
+Gamer:Button("AUTO TP(MUST MAKE ON FOR GOLD)", function()
+while wait(1) do
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(14074.7168, 1407.51477, -3416.3064))
+end
+end)
+Gamer:Button("NORMAL ANTI AFK", function()
+wait(0.5)local ba=Instance.new("ScreenGui")
+local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,304,0,52)
+ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti Afk Kick Script"ca.TextColor3=Color3.new(0,1,1)
+ca.TextSize=22;da.Parent=ca
+da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+da.Size=UDim2.new(0,304,0,107)_b.Parent=da
+_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+_b.Size=UDim2.new(0,304,0,21)_b.Font=Enum.Font.Arial;_b.Text="Made by XxSwordmaster_2xX"
+_b.TextColor3=Color3.new(1,1,1)_b.TextSize=20;ab.Parent=da
+ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377379,0)
+ab.Size=UDim2.new(0,304,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Script Started"
+ab.TextColor3=Color3.new(1,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+bb:CaptureController()bb:ClickButton2(Vector2.new())
+ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)ab.Text="Script Re-Enabled"end)
+end)
+Gamer:Button("AUTO PUNCH (Make on if u make coin farm with prestige)", function()
+while wait() do
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Punch" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+end)
+Gamer:Button("Jump (for better antiafk", function()
+local Player = game:GetService("Players").LocalPlayer
+wait()
+
+while wait() do
+game:GetService("Workspace"):WaitForChild(Player.Name):WaitForChild("Humanoid").Jump = true
+wait(10)
+end
+end)
+Gamer:Button("Auto LIFT/Prestrige", function()
+while wait() do
+local Event = game:GetService("ReplicatedStorage").Remotes.Prestige
+Event:InvokeServer()
+local Event = game:GetService("Players").Maxi1230111.Backpack.Vehicle.Server.Lift
+Event:FireServer()
+end
+end)
+Gamer:Button("Auto LIFT ONLY", function()
+while wait() do
+local Event = game:GetService("Players").Maxi1230111.Backpack.Vehicle.Server.Lift
+Event:FireServer()
+end
+end)
+Gamer:Button("CoinFarm", function()
+while wait(1) do
+while wait(1) do
+while wait(1) do
+while wait(1) do
+while wait(1) do
+while wait(1) do
+wait(1)
+while wait(0.5) do
+local A_1 = game:GetService("Workspace").PunchableCharacters.Monkey.Head
+local A_2 = Vector3.new(14074.7168, 1407.51477, -3416.3064)
+local A_3 = "npc"
+local Event = game:GetService("Workspace").Maxi1230111.Punch.Server.Punch
+Event:FireServer(A_1, A_2, A_3)
+end
+
+while wait(0.5) do
+local A_1 = game:GetService("Workspace").PunchableCharacters.Gorilla.Head
+local A_2 = Vector3.new(14074.7168, 1407.51477, -3416.3064)
+local A_3 = "npc"
+local Event = game:GetService("Workspace").Maxi1230111.Punch.Server.Punch
+Event:FireServer(A_1, A_2, A_3)
+end
+
+while wait(0.5) do
+local A_1 = game:GetService("Workspace").SpawnedChests.Emerald.MainPart
+local A_2 = Vector3.new(14074.7168, 1407.51477, -3416.3064)
+local A_3 = "chest"
+local Event = game:GetService("Workspace").Maxi1230111.Punch.Server.Punch
+Event:FireServer(A_1, A_2, A_3)
+wait(10)
+        end
+       end
+     end
+    end
+   end
+  end
+end
+end)
+
+library:Ready();
