@@ -61,10 +61,12 @@ end
 end)
 Gamer:Button("Auto LIFT/Prestrige", function()
 while wait() do
+while wait() do
 local Event = game:GetService("ReplicatedStorage").Remotes.Prestige
 Event:InvokeServer()
 local Event = game:GetService("Players").LocalPlayer.Backpack.Vehicle.Server.Lift
 Event:FireServer()
+end
 end
 end)
 Gamer:Button("Auto LIFT ONLY", function()
@@ -74,26 +76,22 @@ Event:FireServer()
 end
 end)
 Gamer:Button("CoinFarm", function()
-while true do
-wait(3)
-while true do
-wait()
+while wait(3) do
+while wait() do
 local A_1 = game:GetService("Workspace").PunchableCharacters.Monkey.Head
 local A_2 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 local A_3 = "npc"
 local Event = game:GetService("Players").LocalPlayer.Backpack.Punch.Server.Punch
 Event:FireServer(A_1, A_2, A_3)
 end
-while true do
-wait()
+while wait() do
 local A_1 = game:GetService("Workspace").PunchableCharacters.Gorilla.Head
 local A_2 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 local A_3 = "npc"
 local Event = game:GetService("Players").LocalPlayer.Backpack.Punch.Server.Punch
 Event:FireServer(A_1, A_2, A_3)
 end
-while true do
-wait()
+while wait() do
 local A_1 = game:GetService("Workspace").SpawnedChests.Emerald.MainPart
 local A_2 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 local A_3 = "chest"
