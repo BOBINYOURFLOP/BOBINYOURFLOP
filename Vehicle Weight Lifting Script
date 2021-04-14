@@ -25,9 +25,7 @@ char.Humanoid:MoveTo(Vector3.new(cPos.X,cPos.Y,fPos))
 end
 end)
 Gamer:Button("AUTO TP(MUST MAKE ON FOR GOLD)", function()
-getgenv().Teleporter = true;
 while wait(1) do
-if getgenv().Teleporter = true then
 game.Players.LocalPlayer.Character:MoveTo(Vector3.new(14074.7168, 1407.51477, -3416.3064))
 end
 end)
@@ -104,13 +102,6 @@ end
 end)
 Gamer:Button("1 Tp", function()
 game.Players.LocalPlayer.Character:MoveTo(Vector3.new(14074.7168, 1407.51477, -3416.3064))
-end)
-Gamer:Button("AUTO TP OFF", function()
-getgenv().Teleporter = false;
---[[while wait(1) do
-if getgenv().Teleporter = true then
-game.Players.LocalPlayer.Character:MoveTo(Vector3.new(14074.7168, 1407.51477, -3416.3064))
-end--]]
 end)
 Gamer:Button("Auto Eggs etc. Coming Soon", function()
 end)
