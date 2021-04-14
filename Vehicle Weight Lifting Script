@@ -103,7 +103,79 @@ end)
 Gamer:Button("1 Tp", function()
 game.Players.LocalPlayer.Character:MoveTo(Vector3.new(14074.7168, 1407.51477, -3416.3064))
 end)
-Gamer:Button("Auto Eggs etc. Coming Soon", function()
+Gamer:Button("SunFire Egg 1", function()
+local A_1 = "Sunfire"
+local Event = game:GetService("ReplicatedStorage").Remotes.BuyEgg
+Event:InvokeServer(A_1)
+local Event = game:GetService("ReplicatedStorage").Remotes.SkipHatching
+Event:InvokeServer()
+local Event = game:GetService("ReplicatedStorage").Remotes.HatchEgg
+Event:InvokeServer()
+end)
+Gamer:Button("Moonglow Egg 1", function()
+local A_1 = "Moonglow"
+local Event = game:GetService("ReplicatedStorage").Remotes.BuyEgg
+Event:InvokeServer(A_1)
+local Event = game:GetService("ReplicatedStorage").Remotes.SkipHatching
+Event:InvokeServer()
+local Event = game:GetService("ReplicatedStorage").Remotes.HatchEgg
+Event:InvokeServer()
+end)
+Gamer:Button("Night Egg 1", function()
+local A_1 = "Midnight"
+local Event = game:GetService("ReplicatedStorage").Remotes.BuyEgg
+Event:InvokeServer(A_1)
+local Event = game:GetService("ReplicatedStorage").Remotes.SkipHatching
+Event:InvokeServer()
+local Event = game:GetService("ReplicatedStorage").Remotes.HatchEgg
+Event:InvokeServer()
+end)
+Gamer:Button("Mysthic Egg 1", function() 
+local A_1 = "Mystic"
+local Event = game:GetService("ReplicatedStorage").Remotes.BuyEgg
+Event:InvokeServer(A_1)
+local Event = game:GetService("ReplicatedStorage").Remotes.SkipHatching
+Event:InvokeServer()
+local Event = game:GetService("ReplicatedStorage").Remotes.HatchEgg
+Event:InvokeServer()
+end)
+Gamer:Button("Evil Egg 1", function()
+local A_1 = "Evil"
+local Event = game:GetService("ReplicatedStorage").Remotes.BuyEgg
+Event:InvokeServer(A_1)
+local Event = game:GetService("ReplicatedStorage").Remotes.SkipHatching
+Event:InvokeServer()
+local Event = game:GetService("ReplicatedStorage").Remotes.HatchEgg
+Event:InvokeServer()
+end)
+Gamer:Button("Jungel Egg 1", function()
+local A_1 = "Evil"
+local Event = game:GetService("ReplicatedStorage").Remotes.BuyEgg
+Event:InvokeServer(A_1)
+local Event = game:GetService("ReplicatedStorage").Remotes.SkipHatching
+Event:InvokeServer()
+local Event = game:GetService("ReplicatedStorage").Remotes.HatchEgg
+Event:InvokeServer()
+end)
+Gamer:Button("Exoitc Egg 1", function()
+local A_1 = "Exotic"
+local Event = game:GetService("ReplicatedStorage").Remotes.BuyEgg
+Event:InvokeServer(A_1)
+local Event = game:GetService("ReplicatedStorage").Remotes.SkipHatching
+Event:InvokeServer()
+local Event = game:GetService("ReplicatedStorage").Remotes.HatchEgg
+Event:InvokeServer()
+end)
+Gamer:Button("Normal Egg 1", function()
+local A_1 = "Normal"
+local Event = game:GetService("ReplicatedStorage").Remotes.BuyEgg
+Event:InvokeServer(A_1)
+local Event = game:GetService("ReplicatedStorage").Remotes.SkipHatching
+Event:InvokeServer()
+local Event = game:GetService("ReplicatedStorage").Remotes.HatchEgg
+Event:InvokeServer()
+end)
+Gamer:Button("etc. Coming Soon", function()
 end)
 
 
