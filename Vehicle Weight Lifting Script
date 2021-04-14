@@ -11,10 +11,6 @@ Gamer:Button("GoldFarm Button Or it Can Stop", function()
 end)
 Gamer:Button("I try fix Soon!", function()
 end)
-Gamer:Button("Do not have equipped Vehicel", function()
-end)
-Gamer:Button("or auto lift no work", function()
-end)
 Gamer:Button("AUTO MOVE (ANTIAFK)", function()
 while wait(20) do
 local char = game.Players.LocalPlayer.Character
@@ -29,7 +25,9 @@ char.Humanoid:MoveTo(Vector3.new(cPos.X,cPos.Y,fPos))
 end
 end)
 Gamer:Button("AUTO TP(MUST MAKE ON FOR GOLD)", function()
+getgenv().Teleporter = true;
 while wait(1) do
+if getgenv().Teleporter = true then
 game.Players.LocalPlayer.Character:MoveTo(Vector3.new(14074.7168, 1407.51477, -3416.3064))
 end
 end)
@@ -54,15 +52,6 @@ game:service'Players'.LocalPlayer.Idled:connect(function()
 bb:CaptureController()bb:ClickButton2(Vector2.new())
 ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)ab.Text="Script Re-Enabled"end)
 end)
-Gamer:Button("AUTO PUNCH (Make on if u make coin farm with prestige)", function()
-while wait(0.157) do
-    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-        if v.name == "Punch" then
-            v.Parent = game.Players.LocalPlayer.Character
-        end
-    end
-end
-end)
 Gamer:Button("Jump (for better antiafk", function()
 local Player = game:GetService("Players").LocalPlayer
 wait()
@@ -76,13 +65,13 @@ Gamer:Button("Auto LIFT/Prestrige", function()
 while wait() do
 local Event = game:GetService("ReplicatedStorage").Remotes.Prestige
 Event:InvokeServer()
-local Event = game:GetService("Players").LocalPlayer.Backpack.Vehicle.Server.Lift
+local Event = game:GetService("Players").Maxi1230111.Backpack.Vehicle.Server.Lift
 Event:FireServer()
 end
 end)
 Gamer:Button("Auto LIFT ONLY", function()
 while wait() do
-local Event = game:GetService("Players").LocalPlayer.Backpack.Vehicle.Server.Lift
+local Event = game:GetService("Players").Maxi1230111.Backpack.Vehicle.Server.Lift
 Event:FireServer()
 end
 end)
@@ -92,27 +81,36 @@ while wait(0.5) do
 local A_1 = game:GetService("Workspace").PunchableCharacters.Monkey.Head
 local A_2 = Vector3.new(14074.7168, 1407.51477, -3416.3064)
 local A_3 = "npc"
-local Event = game:GetService("Workspace").LocalPlayer.Punch.Server.Punch
+local Event = game:GetService("Players").LocalPlayer.Backpack.Punch.Server.Punch
 Event:FireServer(A_1, A_2, A_3)
 end
+
 while wait(0.5) do
 local A_1 = game:GetService("Workspace").PunchableCharacters.Gorilla.Head
 local A_2 = Vector3.new(14074.7168, 1407.51477, -3416.3064)
 local A_3 = "npc"
-local Event = game:GetService("Workspace").LocalPlayer.Punch.Server.Punch
+local Event = game:GetService("Players").LocalPlayer.Backpack.Punch.Server.Punch
 Event:FireServer(A_1, A_2, A_3)
 end
+
 while wait(0.5) do
 local A_1 = game:GetService("Workspace").SpawnedChests.Emerald.MainPart
 local A_2 = Vector3.new(14074.7168, 1407.51477, -3416.3064)
 local A_3 = "chest"
-local Event = game:GetService("Workspace").LocalPlayer.Punch.Server.Punch
+local Event = game:GetService("Players").LocalPlayer.Backpack.Punch.Server.Punch
 Event:FireServer(A_1, A_2, A_3)
 end
 end
 end)
 Gamer:Button("1 Tp", function()
 game.Players.LocalPlayer.Character:MoveTo(Vector3.new(14074.7168, 1407.51477, -3416.3064))
+end)
+Gamer:Button("AUTO TP OFF", function()
+getgenv().Teleporter = false;
+--[[while wait(1) do
+if getgenv().Teleporter = true then
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(14074.7168, 1407.51477, -3416.3064))
+end--]]
 end)
 Gamer:Button("Auto Eggs etc. Coming Soon", function()
 end)
