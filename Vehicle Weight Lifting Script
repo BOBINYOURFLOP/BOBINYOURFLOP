@@ -90,12 +90,12 @@ local A_3 = "npc"
 local Event = game:GetService("Players").LocalPlayer.Backpack.Punch.Server.Punch
 Event:FireServer(A_1, A_2, A_3)
 
-while wait(0.5) do
 local A_1 = game:GetService("Workspace").SpawnedChests.Emerald.MainPart
 local A_2 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 local A_3 = "chest"
 local Event = game:GetService("Players").LocalPlayer.Backpack.Punch.Server.Punch
 Event:FireServer(A_1, A_2, A_3)
+end
 end
 end)
 Gamer:Button("1 Tp", function()
@@ -103,6 +103,7 @@ game.Players.LocalPlayer.Character:MoveTo(Vector3.new(14074.7168, 1407.51477, -3
 end)
 Gamer:Button("Auto Eggs etc. Coming Soon", function()
 end)
+
 
 
 library:Ready();
