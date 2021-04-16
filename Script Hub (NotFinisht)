@@ -1,8 +1,11 @@
+
+
 getgenv().LoadGui = true;
 
 if getgenv().LoadGui == true then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("All In One Hub", "BloodTheme")
+
     --Home
     local Main = Window:NewTab("Home")
     local MainSection = Main:NewSection("Home")
@@ -68,6 +71,20 @@ end)
      MainSection:NewButton("Vynixu Script(TowerOFHell)", "Vynixu Script(TowerOFHell)", function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Tower%20of%20Hell"))()
      end)
+     MainSection:NewButton("LuckyBlocks BlockCheat", "Give u all items", function()
+     while wait() do
+     local Event = game:GetService("ReplicatedStorage").SpawnDiamondBlock
+     Event:FireServer()
+     local Event = game:GetService("ReplicatedStorage").SpawnRainbowBlock
+     Event:FireServer()
+     local Event = game:GetService("ReplicatedStorage").SpawnLuckyBlock
+     Event:FireServer()
+     local Event = game:GetService("ReplicatedStorage").SpawnGalaxyBlock
+     Event:FireServer()
+     local Event = game:GetService("ReplicatedStorage").SpawnSuperBlock
+     Event:FireServer()
+      end
+     end)
     -- PLAYER
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player")
@@ -78,5 +95,6 @@ end)
  
     PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(WalkSpeed)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = WalkSpeed
-    end)
+     wait(0.5)
+end)
 end
