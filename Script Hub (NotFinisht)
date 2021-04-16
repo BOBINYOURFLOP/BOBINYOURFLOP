@@ -1,0 +1,82 @@
+getgenv().LoadGui = true;
+
+if getgenv().LoadGui == true then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("All In One Hub", "BloodTheme")
+    --Home
+    local Main = Window:NewTab("Home")
+    local MainSection = Main:NewSection("Home")
+    local MainSection = Main:NewSection("Script Made By Maxi (13)")
+    local MainSection = Main:NewSection("Discord = BOBINYOURFLOP#3688")
+    local MainSection = Main:NewSection("I hope u like my hub")
+
+    --Main
+    local Main = Window:NewTab("ScriptHubs")
+    local MainSection = Main:NewSection("ScriptHubs")
+    local MainSection = Main:NewSection("This are all script hubs what i found")
+    MainSection:NewButton("JayHub", "JayHub", function()
+    loadstring(game:HttpGet("https://jack1214060.xyz/jayhub",true))()
+     end)
+    MainSection:NewButton("LumberSmasher(Key)", "LumberSmasher(Key)", function()
+    getgenv().http_request = http_request or request or (http and http.request) or syn.request 
+    repeat until http_request
+    loadstring(http_request({Url="https://cdn.applebee1558.com/autoloader.lua",Method="GET"}).Body)()
+     end)
+    MainSection:NewButton("Project Evolution", "Project Evolution", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Main/main/Loader.lua", true))()
+     end)
+    MainSection:NewButton("MheeHub", "If the game not supported u get kick!!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BunnySalf/Hentai/main/MHEEHUB",true))()
+     end)
+      MainSection:NewButton("EzHub", "EzHub (+130 Games)", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+     end)
+
+    -- Main2
+    local Main = Window:NewTab("ScriptHubs2")
+    local MainSection = Main:NewSection("ScriptHubs2")
+    MainSection:NewButton("KupCakeHub", "Only load for Supported Games", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Toxic-Mods/Kupcake.Hub/main/Loader", true))()
+     end)
+    MainSection:NewButton("ShuShiScriptHub", "Only load for Supported Games(I think)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Farn2000/ShuShiScript/master/ShuShiScriptHub"))()
+     end)
+    MainSection:NewButton("BloodGui", "I think only for lumbertycoon", function()
+    _G.BloodKey = "AV112ODDY09042021HackerAV112"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BloodStillCool/666blood666/main/nil"))()
+     end)
+     MainSection:NewButton("AntarcticHub", "AntarcticHub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JusticeValley/Antarctic-Hub/main/New.lua", true))()
+    end)
+   MainSection:NewButton("RoxHub(NeedKey)", "RoxHub(NeedKey)", function()
+   Rox_Hub = true
+   loadstring(game:HttpGet("https://gist.githubusercontent.com/HaxxV1/d7cfdb5090e819a84a8db22fb113f39d/raw"))()
+   end)
+    MainSection:NewButton("EHUB(KRNL)", "EHUB(KRNL)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EHUBWINNING/KRNL/main/Script.lua"))()
+    end)
+    MainSection:NewButton("GHUB", "GHUB", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub", true))()
+end)
+
+    -- Scripts
+     local Main = Window:NewTab("Script")
+     local MainSection = Main:NewSection("Script")
+     MainSection:NewButton("MurderMystery2 Script", "MurderMystery2 Script", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+     end)
+     MainSection:NewButton("Vynixu Script(TowerOFHell)", "Vynixu Script(TowerOFHell)", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Tower%20of%20Hell"))()
+     end)
+    -- PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+ 
+    PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(WalkSpeed)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = WalkSpeed
+    end)
+ 
+    PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(WalkSpeed)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = WalkSpeed
+    end)
+end
