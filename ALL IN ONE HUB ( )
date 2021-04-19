@@ -34,7 +34,7 @@ Submit.MouseButton1Down:connect(function()
 	if Imput.Text == "viewer" then
 		main.Visible = false
 
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)%20!"))()
 	end
 end)
 
