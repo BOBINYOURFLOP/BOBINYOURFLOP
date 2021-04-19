@@ -63,6 +63,9 @@ if getgenv().LoadGui == true then
     MainSection:NewButton("GHUB", "GHUB", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub", true))()
 end)
+    MainSection:NewButton("Estoria Hub", "Estoria Hub (Good For Bee Swarm)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))()
+end)
 
     -- Scripts
      local Main = Window:NewTab("Script")
