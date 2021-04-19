@@ -104,6 +104,11 @@ end)
 MainSection:NewButton("Very Good Bubbel Gum Sim Script", "Op bubbel gum simulator script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/derekcool38/Releases/main/ScriptHub/Loader.lua"))()
 end)
+MainSection:NewButton("Shindo Life Auto Farm", "I think its best shindo life auto farm Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2_autofarm/main/main.lua", true))()
+end)
+
+
 -- PLAYER
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player")
