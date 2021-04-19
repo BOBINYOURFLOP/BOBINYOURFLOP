@@ -101,7 +101,10 @@ end)
 MainSection:NewButton("Bee Swarm Simulator Script", "It can crash!", function()
 loadstring(game:GetObjects("rbxassetid://4384103988")[0X1].Source)("Pepsi Swarm")
 end)
-    -- PLAYER
+MainSection:NewButton("Very Good Bubbel Gum Sim Script", "Op bubbel gum simulator script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/derekcool38/Releases/main/ScriptHub/Loader.lua"))()
+end)
+-- PLAYER
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player")
  
