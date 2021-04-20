@@ -36,6 +36,9 @@ if getgenv().LoadGui == true then
       MainSection:NewButton("EzHub", "EzHub (+130 Games)", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
      end)
+     MainSection:NewButton("PantherHub", "PantherHub(NeedKey)", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Splooshhy/PantherHub/main/script.lua"))()
+     end)
 
     -- Main2
     local Main = Window:NewTab("ScriptHubs2")
