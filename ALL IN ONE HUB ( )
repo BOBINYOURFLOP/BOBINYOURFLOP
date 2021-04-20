@@ -34,12 +34,13 @@ Submit.Text = "Login"
 Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
 Submit.TextSize = 40.000
 Submit.MouseButton1Down:connect(function()
-	if Imput.Text == "56789viewerinthestream" then
-		main.Visible = false
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)%20!"))()
-	end
+if Imput.Text == "56789viewerinthestream" or
+   game.Players.Maxi1230111.Character or
+   game.Players.LucaMichael06.Character then
+main.Visible = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)%20!"))()
+end
 end)
-
 Imput.Name = "Imput"
 Imput.Parent = main
 Imput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
