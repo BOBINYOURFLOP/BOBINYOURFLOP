@@ -1,15 +1,8 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local Submit = Instance.new("TextButton")
 local Imput = Instance.new("TextBox")
 local UIGradient = Instance.new("UIGradient")
-
---Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
@@ -31,13 +24,11 @@ Submit.Text = "Login"
 Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
 Submit.TextSize = 28.000
 Submit.MouseButton1Down:connect(function()
-	if Imput.Text == "viewer" then
+	if Imput.Text == "56789viewerinthestream" then
 		main.Visible = false
-
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)%20!"))()
-	end
+end
 end)
-
 Imput.Name = "Imput"
 Imput.Parent = main
 Imput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
