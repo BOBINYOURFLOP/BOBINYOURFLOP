@@ -120,6 +120,11 @@ while true do
     wait()
 end
 end)
+MainSection:NewButton("Ultimate Tower Defense Simulator AutoFishing", "(AutoFish) Script", function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/yCrBkPaY"), true))()
+end)
+
+
 
 
 -- PLAYER
