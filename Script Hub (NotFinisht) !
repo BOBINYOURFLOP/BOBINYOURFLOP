@@ -120,6 +120,9 @@ while true do
     wait()
 end
 end)
+MainSection:NewButton("Paintball Script", "Paintball Script", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/yCrBkPaY%27), true))()
+end)
 
 
 -- PLAYER
