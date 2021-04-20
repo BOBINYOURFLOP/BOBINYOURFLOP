@@ -39,6 +39,9 @@ if getgenv().LoadGui == true then
      MainSection:NewButton("PantherHub", "PantherHub(NeedKey)", function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Splooshhy/PantherHub/main/script.lua"))()
      end)
+     MainSection:NewButton("Dark Hub", "Dark Hub", function()
+     loadstring(game:HttpGet(("https://pastebin.com/raw/yCrBkPaY"), true))()
+     end)
 
     -- Main2
     local Main = Window:NewTab("ScriptHubs2")
@@ -119,9 +122,6 @@ while true do
     stuff("PlayerCatchFish", id)
     wait()
 end
-end)
-MainSection:NewButton("Big Painball Script", "Big Painball Script", function()
-loadstring(game:HttpGet(("https://pastebin.com/raw/yCrBkPaY"), true))()
 end)
 
 
