@@ -1,46 +1,55 @@
 local ScreenGui = Instance.new("ScreenGui")
-local main = Instance.new("Frame")
+local main = Instance.new("ImageLabel")
+local UIGradient = Instance.new("UIGradient")
 local Submit = Instance.new("TextButton")
 local Imput = Instance.new("TextBox")
-local UIGradient = Instance.new("UIGradient")
+
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 main.Name = "main"
 main.Parent = ScreenGui
+main.AnchorPoint = Vector2.new(0.5, 0.5)
 main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-main.BorderSizePixel = 0
-main.Position = UDim2.new(0.382066935, 0, 0.331355244, 0)
-main.Size = UDim2.new(0, 453, 0, 152)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.499602586, 0, 0.533532262, 0)
+main.Size = UDim2.new(0.423921227, 24, 0.262979001, 24)
+main.Image = "rbxassetid://3570695787"
+main.ScaleType = Enum.ScaleType.Slice
+main.SliceCenter = Rect.new(100, 100, 100, 100)
+main.SliceScale = 0.120
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient.Parent = main
 
 Submit.Name = "Submit"
 Submit.Parent = main
 Submit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Submit.BackgroundTransparency = 1.000
-Submit.Position = UDim2.new(0.277972013, 0, 0.522652447, 0)
-Submit.Size = UDim2.new(0, 202, 0, 50)
+Submit.BorderSizePixel = 0
+Submit.Position = UDim2.new(0.240693733, 0, 0.603112817, 0)
+Submit.Size = UDim2.new(0, 436, 0, 65)
 Submit.Font = Enum.Font.SourceSans
 Submit.Text = "Login"
 Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
-Submit.TextSize = 28.000
+Submit.TextSize = 40.000
 Submit.MouseButton1Down:connect(function()
 	if Imput.Text == "56789viewerinthestream" then
 		main.Visible = false
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)%20!"))()
-end
+	end
 end)
+
 Imput.Name = "Imput"
 Imput.Parent = main
 Imput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Imput.BackgroundTransparency = 1.000
-Imput.Position = UDim2.new(0.189440995, 0, 0.0634920225, 0)
-Imput.Size = UDim2.new(0, 282, 0, 63)
+Imput.BorderSizePixel = 0
+Imput.Position = UDim2.new(0.239641547, 0, 0.0972762778, 0)
+Imput.Size = UDim2.new(0, 437, 0, 67)
 Imput.Font = Enum.Font.SourceSans
 Imput.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
 Imput.PlaceholderText = "Password"
 Imput.Text = ""
 Imput.TextColor3 = Color3.fromRGB(0, 0, 0)
-Imput.TextSize = 28.000
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(30, 29, 30)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
-UIGradient.Parent = main
+Imput.TextSize = 40.000
