@@ -103,6 +103,38 @@ MainSection:NewButton("Bee Swarm Simulator Script", "It can crash!", function()
 loadstring(game:GetObjects("rbxassetid://4384103988")[0X1].Source)("Pepsi Swarm")
 end)
 MainSection:NewButton("Very Good Bubbel Gum Sim Script", "Op bubbel gum simulator script", function()
+getgenv().Themes = {
+    Main = {
+        Background = Color3.fromRGB(35,35,35),
+        Dashboard = Color3.fromRGB(30,30,30),
+        PageColor = Color3.fromRGB(29,29,29),
+        TextColor = Color3.fromRGB(255,255,255),
+        ScrollColor = Color3.fromRGB(25,25,25);
+        Elements = Color3.fromRGB(25,25,25)
+    },
+
+    Elements = {
+        Toggle = {
+            EnabledColor = Color3.fromRGB(50,50,50),
+            DisabledColor = Color3.fromRGB(30, 30, 30)
+        },
+        Dropdown = {
+            OptionColor = Color3.fromRGB(23,23,23),
+            SearchBar = Color3.fromRGB(22,22,22)
+        },
+        Slider = {
+            TrailBackground = Color3.fromRGB(30,30,30),
+            Trail = Color3.fromRGB(35,35,35)
+        },
+        TextBox = {
+            Box = Color3.fromRGB(30,30,30)
+        },
+        Keybind = {
+            KeyTextBackground = Color3.fromRGB(30,30,30)
+        }
+    }
+}
+wait(1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/derekcool38/Releases/main/ScriptHub/Loader.lua"))()
 end)
 MainSection:NewButton("Shindo Life Auto Farm", "I think its best shindo life auto farm Script", function()
