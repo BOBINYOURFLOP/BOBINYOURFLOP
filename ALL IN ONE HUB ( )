@@ -3,6 +3,11 @@ local main = Instance.new("ImageLabel")
 local UIGradient = Instance.new("UIGradient")
 local Submit = Instance.new("TextButton")
 local Imput = Instance.new("TextBox")
+local PremiumOpen = Instance.new("TextButton")
+local premiummain = Instance.new("ImageLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local PremiumSubmit = Instance.new("TextButton")
+local PremiumImput = Instance.new("TextBox")
 
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -12,8 +17,8 @@ main.Parent = ScreenGui
 main.AnchorPoint = Vector2.new(0.5, 0.5)
 main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 main.BackgroundTransparency = 1.000
-main.Position = UDim2.new(0.499602586, 0, 0.533532262, 0)
-main.Size = UDim2.new(0.423921227, 24, 0.262979001, 24)
+main.Position = UDim2.new(0.499845535, 0, 0.612793326, 0)
+main.Size = UDim2.new(0.423921257, 24, 0.364290088, 24)
 main.Image = "rbxassetid://3570695787"
 main.ScaleType = Enum.ScaleType.Slice
 main.SliceCenter = Rect.new(100, 100, 100, 100)
@@ -27,7 +32,7 @@ Submit.Parent = main
 Submit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Submit.BackgroundTransparency = 1.000
 Submit.BorderSizePixel = 0
-Submit.Position = UDim2.new(0.240693733, 0, 0.603112817, 0)
+Submit.Position = UDim2.new(0.239500314, 0, 0.688054144, 0)
 Submit.Size = UDim2.new(0, 436, 0, 65)
 Submit.Font = Enum.Font.SourceSans
 Submit.Text = "Login"
@@ -37,25 +42,96 @@ Submit.MouseButton1Down:connect(function()
 if Imput.Text == "56789viewerinthestream" or
    game.Players.Maxi1230111.Character then
 main.Visible = false
+premiummain.Visible = false
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)%20!"))()
 end
 end)
 Submit.MouseButton1Down:connect(function()
 if game.Players.LucaMichael06.Character then
 main.Visible = false
+premiummain.Visible = false
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)%20!"))()
 end
 end)
+
 Imput.Name = "Imput"
 Imput.Parent = main
 Imput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Imput.BackgroundTransparency = 1.000
 Imput.BorderSizePixel = 0
-Imput.Position = UDim2.new(0.239641547, 0, 0.0972762778, 0)
-Imput.Size = UDim2.new(0, 437, 0, 67)
+Imput.Position = UDim2.new(0.239641532, 0, 0.347450197, 0)
+Imput.Size = UDim2.new(0, 437, 0, 78)
 Imput.Font = Enum.Font.SourceSans
 Imput.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
-Imput.PlaceholderText = "Password"
+Imput.PlaceholderText = "Key"
 Imput.Text = ""
 Imput.TextColor3 = Color3.fromRGB(0, 0, 0)
 Imput.TextSize = 40.000
+
+PremiumOpen.Name = "PremiumOpen"
+PremiumOpen.Parent = main
+PremiumOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PremiumOpen.BackgroundTransparency = 1.000
+PremiumOpen.Position = UDim2.new(0.380700648, 0, 0.0531891882, 0)
+PremiumOpen.Size = UDim2.new(0, 200, 0, 50)
+PremiumOpen.Font = Enum.Font.SourceSans
+PremiumOpen.Text = "Premium Key"
+PremiumOpen.TextColor3 = Color3.fromRGB(0, 0, 0)
+PremiumOpen.TextSize = 40.000
+PremiumOpen.MouseButton1Down:connect(function()
+premiummain.Visible = true;
+end)
+premiummain.Name = "premiummain"
+premiummain.Parent = ScreenGui
+premiummain.AnchorPoint = Vector2.new(0.5, 0.5)
+premiummain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+premiummain.BackgroundTransparency = 1.000
+premiummain.Position = UDim2.new(0.499947906, 0, 0.212425411, 0)
+premiummain.Size = UDim2.new(0.230729163, 24, 0.262004912, 24)
+premiummain.Visible = false
+premiummain.Image = "rbxassetid://3570695787"
+premiummain.ScaleType = Enum.ScaleType.Slice
+premiummain.SliceCenter = Rect.new(100, 100, 100, 100)
+premiummain.SliceScale = 0.120
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.30, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.70, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient_2.Parent = premiummain
+
+PremiumSubmit.Name = "PremiumSubmit"
+PremiumSubmit.Parent = premiummain
+PremiumSubmit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PremiumSubmit.BackgroundTransparency = 1.000
+PremiumSubmit.Position = UDim2.new(0.284796566, 0, 0.605134428, 0)
+PremiumSubmit.Size = UDim2.new(0, 200, 0, 64)
+PremiumSubmit.Font = Enum.Font.SourceSans
+PremiumSubmit.Text = "Login"
+PremiumSubmit.TextColor3 = Color3.fromRGB(0, 0, 0)
+PremiumSubmit.TextSize = 40.000
+PremiumSubmit.MouseButton1Down:connect(function()
+if Imput.Text == "PremiumKeyViewerAreBest56789-100" or
+   game.Players.Maxi1230111.Character then
+main.Visible = false
+premiummain.Visible = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)%20!"))()
+end
+end)
+PremiumSubmit.MouseButton1Down:connect(function()
+if game.Players.LucaMichael06.Character then
+main.Visible = false
+premiummain.Visible = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)%20!"))()
+end
+end)
+
+PremiumImput.Name = "PremiumImput"
+PremiumImput.Parent = premiummain
+PremiumImput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PremiumImput.BackgroundTransparency = 1.000
+PremiumImput.Position = UDim2.new(0.192719489, 0, 0.11483781, 0)
+PremiumImput.Size = UDim2.new(0, 287, 0, 62)
+PremiumImput.Font = Enum.Font.SourceSans
+PremiumImput.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+PremiumImput.PlaceholderText = "Premium Key"
+PremiumImput.Text = ""
+PremiumImput.TextColor3 = Color3.fromRGB(0, 0, 0)
+PremiumImput.TextSize = 40.000
