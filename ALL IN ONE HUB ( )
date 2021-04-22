@@ -13,7 +13,6 @@ local PremiumImput = Instance.new("TextBox")
 local PremiumClose = Instance.new("TextButton")
 local Roundify_2 = Instance.new("ImageLabel")
 
-
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 main.Name = "main"
@@ -30,7 +29,6 @@ main.SliceScale = 0.120
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
 UIGradient.Parent = main
-
 Submit.Name = "Submit"
 Submit.Parent = main
 Submit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -53,6 +51,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYO
 wait(1)
 getgenv().LoadGui = true;
 end
+end)
+Submit.MouseButton1Down:connect(function()
+game.Players.Kev2345671:Kick("UR BLACKLISTED")
 end)
 Submit.MouseButton1Down:connect(function()
 if game.Players.LucaMichael06.Character then
@@ -157,6 +158,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYO
 wait(1)
 getgenv().LoadGui = true;
 end
+end)
+PremiumSubmit.MouseButton1Down:connect(function()
+game.Players.Kev2345671:Kick("UR BLACKLISTED")
 end)
 PremiumSubmit.MouseButton1Down:connect(function()
 if game.Players.LucaMichael06.Character then
