@@ -47,8 +47,11 @@ if Imput.Text == "56789viewerinthestream" or
    game.Players.Maxi1230111.Character then
 main.Visible = false
 premiummain.Visible = false
+wait(0.4)
 getgenv().LoadGui = false;
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Normal%20ALL%20IN%20ONE%20HUB"))()
+wait(1)
+getgenv().LoadGui = true;
 end
 end)
 Submit.MouseButton1Down:connect(function()
@@ -56,7 +59,10 @@ if game.Players.LucaMichael06.Character then
 main.Visible = false
 premiummain.Visible = false
 getgenv().LoadGui = false;
+wait(0.4)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Normal%20ALL%20IN%20ONE%20HUB"))()
+wait(1)
+getgenv().LoadGui = true;
 end
 end)
 Imput.Name = "Imput"
@@ -146,7 +152,10 @@ if Imput.Text == "PremiumKeyViewerAreBest56789-100" or
 main.Visible = false
 premiummain.Visible = false
 getgenv().LoadGui = false;
+wait(0.4)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)%20!"))()
+wait(1)
+getgenv().LoadGui = true;
 end
 end)
 PremiumSubmit.MouseButton1Down:connect(function()
@@ -154,7 +163,10 @@ if game.Players.LucaMichael06.Character then
 main.Visible = false
 premiummain.Visible = false
 getgenv().LoadGui = false;
+wait(0.4)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/Script%20Hub%20(NotFinisht)%20!"))()
+wait(1)
+getgenv().LoadGui = true;
 end
 end)
 
