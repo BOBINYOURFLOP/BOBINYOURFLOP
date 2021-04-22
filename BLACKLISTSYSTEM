@@ -29,7 +29,7 @@ LogIn.Text = "Login"
 LogIn.TextColor3 = Color3.fromRGB(0, 0, 0)
 LogIn.TextSize = 70.000
 LogIn.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://github.com/BOBINYOURFLOP/BOBINYOURFLOP/blob/main/:D"))()
+loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/%3AD"))()"))()
 main.Visible = false
 end)
 LogIn.MouseButton1Down:connect(function()
