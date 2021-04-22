@@ -201,4 +201,6 @@ end
 end
 end)
 end)
+wait(1)
+getgenv().LoadGui = true
 end
