@@ -158,7 +158,9 @@ end)
       MainSection:NewButton("Shark Bite script(No inf ammo)", "Shark Bite script", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))()
 end)
-
+      MainSection:NewButton("Breaking Point Script", "Breaking Point Script", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/TqPihvFD', true))()
+end)
 
 -- PLAYER
     local Player = Window:NewTab("Player")
