@@ -158,7 +158,17 @@ end)
       MainSection:NewButton("Breaking Point Script", "Breaking Point Script", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/TqPihvFD', true))()
 end)
-
+--Misc
+    local Main = Window:NewTab("Misc")
+    local MainSection = Main:NewSection("Misc")
+    MainSection:NewButton("SetDay", "SetDay(Idk work all games)", function()
+       game.Lighting.TimeOfDay = "12:00:00:"
+       end)
+   MainSection:NewButton("Loop SetDay", "Loop SetDay(Idk work all games)", function()
+   while wait() do
+       game.Lighting.TimeOfDay = "12:00:00:"
+       end
+       end)
 -- PLAYER
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player")
