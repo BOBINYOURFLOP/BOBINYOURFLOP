@@ -25,7 +25,7 @@ LogIn.BackgroundTransparency = 1.000
 LogIn.Position = UDim2.new(0.300763369, 0, 0.353612155, 0)
 LogIn.Size = UDim2.new(0, 261, 0, 76)
 LogIn.Font = Enum.Font.SourceSans
-LogIn.Text = "Login"
+LogIn.Text = "BlackListCheck"
 LogIn.TextColor3 = Color3.fromRGB(0, 0, 0)
 LogIn.TextSize = 70.000
 LogIn.MouseButton1Down:connect(function()
