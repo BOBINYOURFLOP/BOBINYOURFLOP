@@ -147,7 +147,7 @@ PremiumSubmit.Text = "Login"
 PremiumSubmit.TextColor3 = Color3.fromRGB(0, 0, 0)
 PremiumSubmit.TextSize = 40.000
 PremiumSubmit.MouseButton1Down:connect(function()
-if Imput.Text == "PremiumKeyViewerAreBest56789-100" or
+if PremiumImput.Text == "PremiumKeyViewerAreBest56789-100" or
    game.Players.Maxi1230111.Character then
 main.Visible = false
 premiummain.Visible = false
@@ -169,7 +169,6 @@ wait(1)
 getgenv().LoadGui = true;
 end
 end)
-
 PremiumImput.Name = "PremiumImput"
 PremiumImput.Parent = premiummain
 PremiumImput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
