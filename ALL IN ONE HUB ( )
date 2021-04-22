@@ -169,7 +169,7 @@ PremiumSubmit.MouseButton1Down:connect(function()
 game.Players.Kev2345671:Kick("UR BLACKLISTED")
 end)
 PremiumSubmit.MouseButton1Down:connect(function()
-game.Players.LucaMichael06:Kick("FISCHKOPF")
+game.Players.LucaMichael06:Kick("Uncool")
 end)
 PremiumSubmit.MouseButton1Down:connect(function()
 if game.Players.LucaMichael06.Character then
