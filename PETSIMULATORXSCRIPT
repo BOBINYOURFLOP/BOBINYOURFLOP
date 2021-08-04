@@ -1,3 +1,5 @@
+print("THIS IS THE BEST SCRIPT HAVE FUN")
+wait(2)
 print("START LODING TAKES 10 SEC")
 game.Players.LocalPlayer.PlayerGui:Destroy()
 wait(10)
